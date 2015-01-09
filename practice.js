@@ -50,55 +50,64 @@ var adder = function() {
     alert("The Total Number was " + sum);
 };
 
-var result = adder(4, 6, 9, 3, 8, 2);
-
-
 //Next Problem
 
-
-
 //What is the difference between arguments and parameters?
-
   //Answer Here
+
+When you invoke a function, you must name the “ARGUMENT”
+When you define a function, you define the “PARAMETER” 
 
 
 //Next problem
-
-
-
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
-
-
   //Answer Here
+Falsy values = 
+    false
+    0 
+    "" 
+    null
+    undefined
+    NaN 
 
-
-
+if (val !=== true) {
+  alert("Value is falsy")
+}
 //Next Problem
 
-
-
 //Create a function called myName that returns your name
-
   //Code Here
+
+var myName = function() {
+  var name = "Mark Perkins";
+  return name;
+};
 
 //Now save the function definition of myName into a new variable called newMyName
-
   //Code Here
+
+var newMyName = myName();
 
 //Now alert the result of invoking newMyName
 
-
+alert(newMyName);
 
 //Next problem
-
-
-
 //Create a function called outerFn which returns an anonymous function which returns your name.
-
   //Code Here
+
+var outerFn = function() {
+  return function();
+  var name = "Mark Perkins";
+  return name;
+};
 
 //Now save the result of invoking outerFn into a variable called innerFn.
-
   //Code Here
 
+var innerFn = outerFn();
+
 //Now invoke innerFn.
+
+innerFn();
+
